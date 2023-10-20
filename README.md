@@ -16,9 +16,10 @@ This page will work as a index for all the documents and articles for this matte
 
    - [VsCode](vscode.md)
 
-3. `Node`
+3. `Node/JS/TS`
 
    - [Create npm package](create-npm-common-package.md)
+   - [Typescript](typescript.md)
 
 4. `Shell`
 
