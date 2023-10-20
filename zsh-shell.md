@@ -56,3 +56,20 @@ This is my personal setup for linux (Ubuntu) to install `oh-my-zsh` shell and se
 1. Install golang from official webpage
 
 2. Uncomment Go section
+
+## Functions
+
+often I likie to create zsh functions to automate a little bit of my life, here an example
+
+```console
+gcommit() {
+  if [ n != "" ]
+  then
+    git add .
+    git commit -m "$1"
+    git push
+  else
+    echo "YOU MUST PROVIDE A MESSAGE"
+  fi
+}
+```

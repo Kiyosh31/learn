@@ -43,31 +43,63 @@ This is my personal taste in vscode folded in `settings.json`
 
 ```json
 {
-  "security.workspace.trust.untrustedFiles": "open",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.settings.editor": "json",
   "editor.fontSize": 18,
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "editor.renderWhitespace": "all",
+  "go.toolsManagement.autoUpdate": true,
   "editor.fontLigatures": true,
-  "editor.fontFamily": "'Cascadia Code', 'Fira Code'",
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": true,
-  "prettier.singleQuote": true,
+  "editor.fontFamily": "'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontSize": 14,
+  "workbench.editor.languageDetection": true,
+  "gitlens.hovers.currentLine.over": "line",
+  "telemetry.telemetryLevel": "off",
   "[javascript]": {
+    "editor.maxTokenizationLineLength": 2500,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
+    "editor.suggest.insertMode": "replace",
+    "gitlens.codeLens.scopes": ["document"],
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[html]": {
+  "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "terminal.integrated.fontFamily": "MesloLGS NF"
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[graphql]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "protoc": {
+    "options": [
+      "--proto_path=proto",
+      "--proto_path=${workspaceRoot}/proto",
+      "--proto_path=${env.GOPATH}/src",
+      "--java_out=gen/java"
+    ]
+  },
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "terminal.explorerKind": "external",
+  "workbench.settings.editor": "json",
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path.linux": "/home/kiyoshi/.local/state/vs-kubernetes/tools/helm/linux-amd64/helm"
+  },
+  "extensions.ignoreRecommendations": true,
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "cmake.configureOnOpen": true,
+  "liveServer.settings.donotShowInfoMsg": true
 }
 ```
 
